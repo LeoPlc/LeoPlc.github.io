@@ -18,8 +18,14 @@ h1 {
 }
 
 p {
+
 	font-family: "Roboto", Arial, sans-serif;
+	font-size: 15px;
 	color: white;
+}
+
+header p {
+	text-align: center;
 }
 
 
@@ -29,13 +35,22 @@ p {
     color:white;
 }
 
+.section-title {
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	margin-bottom: 40px;
+}
+
 .hero {
-    background-image: url("PLC\ inf\ 1.jpeg");
+    background-image: url("PLC inf 1.jpeg");
     background-size: cover;
     color: white;
     text-align: center;
     font-family:"Helvetica Neue", Arial, sans-serif;
-    padding: 200px 0;
+    padding: 150px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hero h2 {
@@ -46,6 +61,7 @@ p {
 .hero p {
 	font-size: 15px;
 	color: white;
+	margin-bottom: 20px;
 }
 
 .btn {
@@ -59,31 +75,82 @@ p {
 
 .features {
 	display: flex;
-	justify-content: space-between;
-	margin: 50px 0;
+	flex-wrap: space-wrap;
+	justify-content: center;
 }
 
 .feature {
-	flex-basis: 40%;
-	text-align: center;
-    color: white;
+	width: 500px;
+	height: auto;
+	margin: 10px 100px 10px 0;
+	position: relative;
+}
+
+.feature:last-child{
+	margin-right:0;
 }
 
 .feature img {
+
+	position: relative;
+	display: flex;
+
 	width: 100%;
 	height: auto;
+	border-top-left-radius: 40px 40px;
+	border-top-right-radius: 40px 40px;
+	border-bottom-left-radius: 40px 40px;
+	border-bottom-right-radius: 40px 40px;
+
 	margin-bottom: 10px;
+
+}
+
+.features .feature .image-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px,lfr));
+	grid-gap: 10px;
+
+	margin-bottom: 0px;
+}
+
+.features .feature .tooltip {
+
+
+	visibility:hidden;
+	position: bottom;
+	bottom: 100%;
+	left:0;
+	width: 100%;
+	transform: translateX(0%);
+	background-color: #333;
+	color: #999;
+	padding: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0.2);
+	text-align: center;
+	box-sizing: border-box;
+	word-wrap: break-word;
+
+
+	transition: opacity 1s ease;
+}
+
+.features .feature:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
 }
 
 .feature h3 {
 	font-size: 24px;
 	margin-bottom: 15px;
-    color:white;
+    	color: #999;
+	text-aling:center;
 }
 
 .feature p {
 	font-size: 15px;
-    color: white;
+   	color: white;
+	text-align: center;
 }
 
 .footer {
@@ -97,8 +164,3 @@ p {
     text-align: justify;
 }
 
-.center-img {
-    display: grid;
-    grid-template-columns: repeat (auto-fit, minmax(250px,lfr));
-    grid-gap: 10px;
-}
