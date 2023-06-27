@@ -25,7 +25,7 @@ p {
 }
 
 a[href^="tel"]{
-	color:inherit;
+	color:white;
 	text-decoration:inherit;
 }
 
