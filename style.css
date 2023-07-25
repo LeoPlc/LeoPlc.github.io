@@ -1,171 +1,280 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-body {
-    background-color: #222;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: url('./Logo.png') center/cover;
+    height: 75px;
 }
 
 h1 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color:aliceblue;
+
+    padding: 5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:aliceblue;
+
+    padding: 5px;
+    padding-left:30px;
+
+    background: rgb(145,150,150);
+
+    transition: 0.2s;
+}
+
+
+body {
+    background-color: rgb(220,220,220);
+}
+
+body p {
+    text-align: center;
+    color: rgb(110,110,110);
+    transition:0.5s;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "vi bt";
+}
+
+input,
+textarea {
+    margin: 5px;
+    border: 1px solid rgb(140, 140, 140);
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+
+}
+
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit{
+    grid-area: bt;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background: rgb(160,160,160);
+    color: rgb(40,40,40);
 }
 
 p {
-
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 15px;
-	color: white;
+    padding: 20px;
 }
 
-a[href^="tel"]{
-	color:white;
-	text-decoration:none;
+footer {
+    background: rgb(110,110,110);
+    transition: 0.2s;
 }
-
-header p {
-	text-align: center;
-}
-
-
-.logo {
-    font-size: 24px;
-    text-align: center;
-    color:white;
-}
-
-.section-title {
-	font-size: 24px;
-	text-align: center;
-	color: white;
-	margin-bottom: 40px;
-}
-
-.hero {
-    background-image: url("PLC inf 1.jpeg");
-    background-size: cover;
-    color: white;
-    text-align: center;
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    padding: 150px 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.hero h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-	font-size: 15px;
-	color: white;
-	margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.features {
-	display: flex;
-	flex-wrap: space-wrap;
-	justify-content: center;
-}
-
-.feature {
-	width: 500px;
-	height: auto;
-	margin: 10px 100px 10px 0;
-	position: relative;
-}
-
-.feature:last-child{
-	margin-right:0;
-}
-
-.feature img {
-
-	position: relative;
-	display: flex;
-
-	width: 100%;
-	height: auto;
-	border-top-left-radius: 40px 40px;
-	border-top-right-radius: 40px 40px;
-	border-bottom-left-radius: 40px 40px;
-	border-bottom-right-radius: 40px 40px;
-
-	margin-bottom: 10px;
-
-}
-
-.features .feature .image-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px,lfr));
-	grid-gap: 10px;
-
-	margin-bottom: 0px;
-}
-
-.features .feature .tooltip {
-
-
-	visibility:hidden;
-	position: bottom;
-	bottom: 100%;
-	left:0;
-	width: 100%;
-	transform: translateX(0%);
-	background-color: #333;
-	color: #999;
-	padding: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0.2);
-	text-align: center;
-	box-sizing: border-box;
-	word-wrap: break-word;
-
-
-	transition: opacity 1s ease;
-}
-
-.features .feature:hover .tooltip {
-	visibility: visible;
-	opacity: 1;
-}
-
-.feature h3 {
-	font-size: 24px;
-	margin-bottom: 15px;
-    	color: #999;
-	text-aling:center;
-}
-
-.feature p {
-	font-size: 15px;
-   	color: white;
-	text-align: center;
-}
-
-.footer {
-	background-color: #111;
-	color: white;
-	text-align: center;
-	padding: 10px;
-}
-
-.footer p{
+footer p {
+    color:aliceblue;
     text-align: justify;
 }
+
+footer:hover {
+    background: rgb(90,90,90);
+    transition: 0.2s;
+    padding: 20px;
+}
+
+footer:hover > h2 {
+    background: rgb(110,110,130);
+}
+
+.section {
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section p {
+    text-align: center;
+    color: rgb(110,110,110);
+    transition:0.5s;
+}
+
+.section:hover {
+    background: rgb(188,190,190);
+    color:aliceblue;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.section:hover > h2{
+    padding:8px;
+    padding-left:100px;
+
+    background: rgb(110,110,130);
+
+    transition: 0.2s;
+}
+
+.section:hover > p {
+    color:aliceblue;
+    transition:0.5s;
+}
+
+
+.flexbox,
+.grid {
+    border: none;
+    border-radius: 5px;
+    padding:20px;
+    margin-top:15px;
+}
+
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 990px;
+    height: 400px;
+
+    background: rgb(220,220,220); 
+    border-radius: 2px;
+}
+
+.section:hover > .container {
+    margin-top:20px;
+    transition: 0.5s;
+    background-color: rgb(188,190,190);
+}
+
+.container-onglets {
+    background: rgb(220,220,220); 
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+
+.onglets {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    cursor:pointer;
+    color:black;
+}
+
+
+.contenu {
+    height: 80%;
+    width:100%;
+    position: absolute;
+    opacity: 0;
+    color: black;
+}
+
+.contenu h3 {
+    padding: 20px;
+}
+
+.contenu hr {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    background-color: #000;
+    border: none;
+}
+.contenu p {
+    padding: 20px;
+    text-align: justify;
+}
+
+.active {
+    background: rgb(145,150,150);
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.section:hover > .active {
+   background: rgb(110,110,130);
+   transition: 0.5s;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.grid img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+Mise en forme des images en fonction de la dimension de l'écran sur lequel le site est ouvert
+*/
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 720px;
+        transition: 0.5s;
+    }
+    .onglets {
+        width: 240px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 660px;
+        transition: 0.5s;
+    }
+    .onglets {
+        width: 220px;
+        transition: 0.5s;
+    }
+}
+
 
