@@ -1,97 +1,109 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://font.googleapis.com/css2family=Ubuntu&display=swap' rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <head>
-        <title>
-            PLC Informatique
-        </title>
+    <title>PLC informatique</title>
+</head>
 
-        <link rel = "stylesheet" href = "style.css">
+<body>
+    <header>
+        <h1>PLC informatique</h1>
+    </header>
+    <main>
 
-    </head>
 
-    <body>
-        <header>
-            <h1 class = "logo">
-                PLC INFORMATIQUE
-            </h1>
-        </header>
+        <p>
+            Assemblez votre PC sur mesure, ou donnez un second souffle à votre machine
+        </p>
 
-        <section class = "hero">
-            <p>
-                Assemblez votre PC sur mesure, ou donnez un second souffle à votre machine.
-            </p>
-	    <a href ="#services" class = "btn">
-		En savoir plus...
-	    </a>
-            <a href="#footer" class = "btn">
-                Contact...
-            </a>
-        </section>
 
-	<header>
-		<h1 class = "logo" id = "services">
-			Services proposés
-		</h1>
-		<p>
-			Passez votre curseur sur les images
-		</p>
-	</header>
+        <div class="section">
+            <h2>Services</h2>
 
-        <section class = "features">
-            <div class = "feature">
-                	<div class = "image-container">
-				<img src = "PLC inf 4.jpeg" alt = "description de l'image">
-			</div>
-			<div class = "tooltip">
-				Vous pouvez assembler votre PC avec les composants qui vous conviennent, pour de la bureautique ou du jeu.
-			</div>
+            <div class="container">
+                <div class="container-onglets">
+                    <div class="onglets active" data-anim="1">Assemblage</div>
+                    <div class="onglets" data-anim="2">Reconditionnement</div>
+                    <div class="onglets" data-anim="3">Conseils</div>
+                </div>
+                <div class="contenu activeContenu" data-anim="1">
+                    <h3>Assemblez votre PC selon vos propres critères</h3>
+                    <hr> <!-- Permet de faire une séparation -->
+                    <p>
+                        Vous souhaitez construire votre propre ordinateur, car ceux vendus clé en main ne vous conviennent pas ? Je peux vous conseiller sur les composants à choisir dans votre machine, effectuer l'achat des pièces, et l'assembler pour vous. 
+                        <br><br>
+                        Les conditions tarifaires s'élèvent à 20€ de l'heure, tout service confondu. Vous pouvez me demander un devis gratuitement, je me ferai un plaisir de vous répondre dans les plus brefs délais.
+                    </p>
+                </div>
+
+
+                <div class="contenu" data-anim="2">
+                    <h3>Reconditionnez votre ordinateur afin de le rendre comme neuf, voire plus performant
+                        qu'auparavant</h3>
+                    <hr> <!-- Permet de faire une séparation -->
+                    <p>
+                        Lorsque vous souhaitez améliorer votre machine, afin de ne pas avoir à en acheter une nouvelle, vous pouvez penser au reconditionnement d'ordinateur.
+                        <br><br>
+                        Il n'est en effet pas toujours nécessaire de changer toutes les pièces afin de se défaire d'un ralentissement gênant sur votre machine, cela peut être dû à plusieurs facteurs, comme un processeur mal dimensionné, une RAM insuffisante, voire un stockage saturé...
+                        <br><br>
+                        Vous pouvez donc vous renseigner auprès de moi afin de demander conseil sur les pièces à changer, et je modifierai votre machine en conséquence.
+                    </p>
+                </div>
+
+
+                <div class="contenu" data-anim="3">
+                    <h3>Demandez conseil afin de savoir quel type d'ordinateur vous conviendrait le mieux</h3>
+                    <hr> <!-- Permet de faire une séparation -->
+                    <p>
+                        Pour un ordinateur portable, entre le choix du processeur, de la carte graphique, de la RAM
+                        installée, mais aussi du stockage, vous pouvez demander conseil afin de savoir quoi choisir en
+                        fonction de vos besoins.
+                        <br>
+                        <br>
+                        En effet, votre ordinateur ne sera pas configuré de la même manière si ce dernier doit supporter
+                        des jeux vidéos ou du montage vidéo, de la production musicale, du traitement d'images, ou alors
+                        de la bureautique, etc.
+                    </p>
+                </div>
             </div>
 
-            <div class = "feature">
-			<div class = "image-container">
-				<img src = "PLC inf 8.jpeg" alt = "description de l'image">
-			</div>
-			<div class = "tooltip">
-				Vous pouvez reconditionner votre ordinateur, fixe ou portable, afin de le rendre plus rapide.
-			</div>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+
+            <div class="grid">
+                <div class="grid-container">
+                    <img src="Logo.png" alt="bg">
+                    <form action="">
+                        <input type="text" id="firstname" placeholder="prénom">
+                        <input type="text" id="surname" placeholder="nom">
+                        <textarea cols="30" rows="10" placeholder="Votre message"></textarea>
+                        <input type="submit" value="Valider" id="btn-submit">
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>
 
-
-	<header>
-		<h1 class = "logo">
-			Contact
-		</h1>
-	</header> 
-
-		<p>
-			Mail: thomas.palaric56@gmail.com
-			<br>
-			Adresse: Bot en Touzé, 59890 Plescop, France
-			<br>
-			<a href="tel: 06 48 60 28 20"06 48 60 28 20> 06 48 60 28 20 </a> 
-			<br>
-		</p>
-		
-
-
-
-        <section class = "footer" id="footer">
-            <h1 class = "logo">
-                PARCOURS
-            </h1>
+        <footer>
+            <h2>Parcours</h2>
             <p>
-                <br>
-                <br>
-                Je suis passionné d'hardware depuis maintenant 8 ans. J'ai commencé en assemblant des ordinateurs pour mes amis et ma famille, puis en dépannant des ordinateurs défectueux en changeant les pièces défaillantes.
-                Finalement, d'autres personnes me contactent afin de voir s'il est possible de rendre leur ordinateur plus rapide ou si l'on peut changer certaines pièces pour le rendre plus performant.
-                Quelle que soit votre demande, n'hésitez pas à me contacter par mail. Je vous répondrai sur les possibilités suivant votre machine, et pourrai vous faire un devis gratuitement.            
-                <br>
-                <br>
+                Je suis passionné d'hardware depuis maintenant 8 ans. J'ai commencé en assemblant des ordinateurs pour
+                mes amis et ma famille, puis en dépannant des ordinateurs défectueux en changeant les pièces
+                défaillantes. Finalement, d'autres personnes me contactent afin de voir s'il est possible de rendre leur
+                ordinateur plus rapide ou si l'on peut changer certaines pièces pour le rendre plus performant. Quelle
+                que soit votre demande, n'hésitez pas à me contacter par mail. Je vous répondrai sur les possibilités
+                suivant votre machine, et pourrai vous faire un devis gratuitement.
             </p>
-        </section>
-        
-    </body>
+        </footer>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
 </html>
