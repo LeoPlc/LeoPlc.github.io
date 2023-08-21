@@ -6,11 +6,15 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
     background: url('./Logo.png') center/cover;
     height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 h1 {
@@ -32,7 +36,7 @@ h2 {
 
     background: rgb(145,150,150);
 
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 
@@ -90,21 +94,23 @@ p {
 
 footer {
     background: rgb(110,110,110);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 footer p {
     color:aliceblue;
     text-align: justify;
+    transition: 0.5s;
 }
 
 footer:hover {
     background: rgb(90,90,90);
     transition: 0.2s;
-    padding: 20px;
+    padding: 10px;
 }
 
 footer:hover > h2 {
-    background: rgb(110,110,130);
+    background: url('./Logo.png') center/cover;
+    transition: 1s;
 }
 
 .section {
@@ -122,7 +128,7 @@ footer:hover > h2 {
 .section:hover {
     background: rgb(188,190,190);
     color:aliceblue;
-    padding: 20px;
+    padding: 10px;
     transition: 0.5s;
 }
 
@@ -130,9 +136,8 @@ footer:hover > h2 {
     padding:8px;
     padding-left:100px;
 
-    background: rgb(110,110,130);
-
-    transition: 0.2s;
+    background: url('./Logo.png') center/cover;
+    transition: 1s;
 }
 
 .section:hover > p {
@@ -161,6 +166,8 @@ footer:hover > h2 {
 
     background: rgb(220,220,220); 
     border-radius: 2px;
+
+    transition: 0.5s;
 }
 
 .section:hover > .container {
@@ -217,7 +224,7 @@ footer:hover > h2 {
 .active {
     background: rgb(145,150,150);
     color: #f1f1f1;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .section:hover > .active {
@@ -233,6 +240,7 @@ footer:hover > h2 {
 .grid-container {
     display: grid;
     grid-template-columns: 30% 70%;
+    transition: 0.5s;
 }
 .grid img {
     width: 80%;
@@ -274,6 +282,11 @@ Mise en forme des images en fonction de la dimension de l'écran sur lequel le s
     .onglets {
         width: 220px;
         transition: 0.5s;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
