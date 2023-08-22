@@ -93,7 +93,7 @@ p {
 }
 
 footer {
-    background: url('../img/PLC\ inf\ 1.jpeg');
+    background: url('../img/PLC\ inf\ 1.jpeg') center/cover;
     transition: 0.2s;
 }
 
