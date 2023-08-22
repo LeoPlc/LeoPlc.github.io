@@ -9,7 +9,7 @@ footer:hover {
 }
 
 footer:hover>h2 {
-    background: url('./Logo.png') center/cover;
+    background: url('https://LeoPlc.github.io/Logo.png') center/cover;
     transition: 1s;
 }
 
@@ -24,7 +24,7 @@ footer:hover>h2 {
     padding: 8px;
     padding-left: 100px;
 
-    background: url('./Logo.png') center/cover;
+    background: url('https://LeoPlc.github.io/Logo.png') center/cover;
     transition: 1s;
 }
 
