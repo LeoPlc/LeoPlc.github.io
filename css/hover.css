@@ -22,7 +22,22 @@ footer:hover>h2 {
     transition: 0.2s;
 }
 
+.section_2:hover {
+    background: rgb(33, 34, 34);
+    color: aliceblue;
+    
+    transition: 0.2s;
+}
+
 .section:hover>h2 {
+    padding: 5px;
+    padding-left: 40px;
+
+    background: url('../img/Logo.png') center/cover;
+    transition: 0.2s;
+}
+
+.section_2:hover>h2 {
     padding: 5px;
     padding-left: 40px;
 
