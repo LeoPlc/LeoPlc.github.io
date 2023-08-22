@@ -10,7 +10,7 @@ footer:hover {
 
 footer:hover>h2 {
     background: url('../img/Logo.png') center/cover;
-    transition: 0.2s;
+    transition: 1s;
     padding: 5px;
     padding-left: 40px;
 }
@@ -34,7 +34,7 @@ footer:hover>h2 {
     padding-left: 40px;
 
     background: url('../img/Logo.png') center/cover;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .section_2:hover>h2 {
@@ -42,7 +42,7 @@ footer:hover>h2 {
     padding-left: 40px;
 
     background: url('../img/Logo.png') center/cover;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .section:hover>p {
