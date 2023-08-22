@@ -83,7 +83,7 @@
 
 
     .container {
-        width: 150px;
+        width: 240px;
         transition: 0.2s;
     }
 
@@ -96,7 +96,7 @@
     }
 
     .onglets {
-        width: 50px;
+        width: 80px;
         transition: 0.2s;
         font-size: 5px;
     }
