@@ -2,6 +2,7 @@
     min-height: 500px;
     align-items: center;
     justify-content: center;
+    margin-top:0;
 }
 
 .section p {
@@ -27,10 +28,13 @@
     transform: translate(-50%, -50%);
 
     width: 990px;
-    height: 400px;
+    height: 300px;
 
     background-color: rgb(22, 22, 22);
     border-radius: 2px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
 
     transition: 0.2s;
 }

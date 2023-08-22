@@ -25,17 +25,36 @@
         flex-direction: column;
         align-items: center;
     }
+
+    form {
+        width: 10%;
+    }
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .container {
-        width: 330px;
+        width: 480px;
         transition: 0.2s;
     }
 
     .onglets {
-        width: 1100px;
+        width: 160px;
+        transition: 0.2s;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 180px;
+        transition: 0.2s;
+    }
+
+    .onglets {
+        width: 60px;
         transition: 0.2s;
     }
 
