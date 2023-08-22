@@ -1,0 +1,118 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+header {
+    background: url('./Logo.png') center/cover;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+
+    padding: 5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: aliceblue;
+
+    padding: 5px;
+    padding-left: 30px;
+
+    background: rgb(39, 41, 41);
+
+    transition: 0.2s;
+}
+
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+body p {
+    text-align: center;
+    color: rgb(110, 110, 110);
+    transition: 0.2s;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "vi bt";
+}
+
+input,
+textarea {
+    margin: 5px;
+    border: 1px solid rgb(140, 140, 140);
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+
+}
+
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+}
+
+
+
+p {
+    padding: 20px;
+}
+
+footer {
+    background: url('./PLC\ inf\ 1.jpeg');
+    transition: 0.2s;
+}
+
+footer p {
+    color: aliceblue;
+    text-align: justify;
+    transition: 0.2s;
+
+}
+
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
