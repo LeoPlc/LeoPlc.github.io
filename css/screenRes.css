@@ -1,17 +1,25 @@
-@media screen and (max-width: 1000px) {
+/*  
+--------------------------------------------Ecran de télévision--------------------------------------------
+*/
+
+@media screen and (max-width: 1300px) {
     
     .container {
-        width: 720px;
+        width: 990px;
         transition: 0.2s;
     }
 
     .onglets {
-        width: 240px;
+        width: 330px;
         transition: 0.2s;
     }
 }
 
-@media screen and (max-width: 750px) {
+/*  
+--------------------------------------------Ecran fixe d'ordi--------------------------------------------
+*/
+
+@media screen and (max-width: 1000px) {
     .container {
         width: 660px;
         transition: 0.2s;
@@ -30,8 +38,11 @@
 
 }
 
+/*  
+--------------------------------------------Ecran d'ordi portable--------------------------------------------
+*/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     h1 {
         font-size : 30px;
         transition: 0.5s;
@@ -50,7 +61,11 @@
 
 }
 
-@media screen and (max-width: 400px) {
+/*  
+--------------------------------------------Ecran de tablette--------------------------------------------
+*/
+
+@media screen and (max-width: 480px) {
 
     h1 {
         font-size: 20px;
@@ -74,7 +89,11 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+/*  
+--------------------------------------------Ecran de téléphone--------------------------------------------
+*/
+
+@media screen and (max-width: 320px) {
 
     h1 {
         font-size: 10px;
