@@ -13,7 +13,7 @@ html {
 
 
 header {
-    background: url('https://LeoPlc.github.io/Logo.png') center/cover;
+    background: url('../img/Logo.png') center/cover;
     height: 75px;
     position: sticky;
     top: 0;
@@ -93,7 +93,7 @@ p {
 }
 
 footer {
-    background: url('https://LeoPlc.github.io/img/PLC\ inf\ 1.jpeg');
+    background: url('../img/PLC\ inf\ 1.jpeg');
     transition: 0.2s;
 }
 
