@@ -1,0 +1,127 @@
+/*  
+--------------------------------------------Ecran de télévision--------------------------------------------
+*/
+
+@media screen and (max-width: 1300px) {
+    
+    .container {
+        width: 990px;
+        transition: 0.2s;
+    }
+
+    .onglets {
+        width: 330px;
+        transition: 0.2s;
+    }
+}
+
+/*  
+--------------------------------------------Ecran fixe d'ordi--------------------------------------------
+*/
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 660px;
+        transition: 0.2s;
+    }
+
+    .onglets {
+        width: 220px;
+        transition: 0.2s;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+/*  
+--------------------------------------------Ecran d'ordi portable--------------------------------------------
+*/
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size : 30px;
+        transition: 0.5s;
+    }
+    .container {
+        width: 480px;
+        transition: 0.2s;
+    }
+
+    .onglets {
+        width: 160px;
+        transition: 0.2s;
+        font-size: 15px;
+    }
+
+
+}
+
+/*  
+--------------------------------------------Ecran de tablette--------------------------------------------
+*/
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+
+    .container {
+        width: 180px;
+        transition: 0.2s;
+    }
+
+    .onglets {
+        width: 60px;
+        transition: 0.2s;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*  
+--------------------------------------------Ecran de téléphone--------------------------------------------
+*/
+
+@media screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 10px;
+        transition: 0.5s;
+    }
+
+
+    .container {
+        width: 240px;
+        transition: 0.2s;
+    }
+
+    .contenu p {
+        font-size: 5px;
+    }
+
+    .contenu h3 {
+        font-size: 5px;
+    }
+
+    .onglets {
+        width: 80px;
+        transition: 0.2s;
+        font-size: 5px;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
