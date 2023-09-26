@@ -52,7 +52,6 @@ footer:hover>h2 {
 }
 
 .section:hover>.container {
-    margin-top: 15px;
     transition: 0.2s;
     background: rgb(33, 34, 34);
 }

@@ -5,6 +5,7 @@
 @media screen and (max-width: 1300px) {
     
     .container {
+        margin-top: 150px;
         width: 990px;
         transition: 0.2s;
     }
@@ -21,6 +22,7 @@
 
 @media screen and (max-width: 1000px) {
     .container {
+        margin-top: 150px;
         width: 660px;
         transition: 0.2s;
     }
@@ -48,6 +50,7 @@
         transition: 0.5s;
     }
     .container {
+        margin-top: 150px;
         width: 480px;
         transition: 0.2s;
     }
