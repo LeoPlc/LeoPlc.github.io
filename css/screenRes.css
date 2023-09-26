@@ -77,18 +77,15 @@
 
 
     .container {
-        width: 180px;
+        width: 330px;
         transition: 0.2s;
+        font-size: 12px;
     }
 
     .onglets {
-        width: 60px;
+        width: 110px;
         transition: 0.2s;
-    }
-
-    .grid-container {
-        flex-direction: column;
-        align-items: center;
+        font-size: 12px;
     }
 }
 
@@ -98,29 +95,25 @@
 
 @media screen and (max-width: 320px) {
 
-    h1 {
+    html{
         font-size: 10px;
+    }
+
+
+    h1 {
         transition: 0.5s;
     }
 
 
     .container {
         width: 240px;
-        transition: 0.2s;
-    }
-
-    .contenu p {
-        font-size: 5px;
-    }
-
-    .contenu h3 {
-        font-size: 5px;
+        transition: 0.2s
     }
 
     .onglets {
         width: 80px;
         transition: 0.2s;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .grid-container {
