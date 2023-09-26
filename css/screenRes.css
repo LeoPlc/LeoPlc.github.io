@@ -2,6 +2,14 @@
 --------------------------------------------Ecran de télévision--------------------------------------------
 */
 
+@media screen and (max-width: 1500px) {
+    
+    .container {
+        margin-top: 150px;
+        transition: 0.2s;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     
     .container {
